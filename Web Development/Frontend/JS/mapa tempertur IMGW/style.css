@@ -1,0 +1,75 @@
+
+body 
+{
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #e1f5fe);
+  color: #222;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header 
+{
+  background: #0288d1;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.5px;
+}
+#map 
+{
+  flex-grow: 1;
+  margin: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+}
+.leaflet-popup-content-wrapper 
+{
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+}
+.leaflet-popup-tip 
+{
+  background: white;
+}
+.leaflet-popup-content b 
+{
+  color: #01579b;
+  font-size: 15px;
+}
+.leaflet-container a 
+{
+  color: #0277bd;
+  text-decoration: none;
+}
+.leaflet-container a:hover 
+{
+  text-decoration: underline;
+}
+.leaflet-marker-icon 
+{
+  transition: transform 0.2s ease-in-out;
+}
+.leaflet-marker-icon:hover 
+{
+  transform: scale(1.15);
+}
+@media (max-width: 600px) 
+{
+  header 
+  {
+    font-size: 1.2rem;
+  }
+
+  #map 
+  {
+    margin: 10px;
+  }
+}
