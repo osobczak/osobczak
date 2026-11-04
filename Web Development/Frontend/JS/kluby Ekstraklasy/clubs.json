@@ -1,0 +1,146 @@
+[
+  {
+    "club": "Arka Gdynia",
+    "lat": 54.493343598461806,
+    "lon": 18.53096802610158,
+    "stadium_name": "Stadion Miejski w Gdyni",
+    "year": "1929",
+    "icon":"./arka.png"
+  },
+  {
+    "club": "Bruk‑Bet Termalica Nieciecza",
+    "lat": 50.159215999293856,
+    "lon": 20.850210690796153,
+    "stadium_name": "Stadion Sportowy Bruk-Bet Termalica (Nieciecza)",
+    "year": "1922 (reaktywcja 1952)",
+    "icon":"./termalica.png"
+  },
+  {
+    "club": "Cracovia",
+    "lat": 50.05862658769847,
+    "lon": 19.920636513433443,
+    "stadium_name": "Stadion im. Marszałka Józefa Piłsudskiego (Kraków)",
+    "year": "1906",
+    "icon":"./cracovia.png"
+  },
+  {
+    "club": "GKS Katowice",
+    "lat": 50.28034340726772,
+    "lon": 19.00104559091676,
+    "stadium_name": "Arena Katowice (Katowice)",
+    "year": "1964",
+    "icon":"./katowice.png"
+  },
+  {
+    "club": "Górnik Zabrze",
+    "lat": 50.29683024350488,
+    "lon": 18.768165890933243,
+    "stadium_name": "Stadion im. Ernesta Pohla (Zabrze)",
+    "year": "1948",
+    "icon":"./gornik.png"
+  },
+  {
+    "club": "Jagiellonia Białystok",
+    "lat": 53.10663547535059,
+    "lon": 23.14831136549959,
+    "stadium_name": "Stadion Miejski w Białymstoku",
+    "year": "1920",
+    "icon":"./jagiellonia.png"
+  },
+  {
+    "club": "Korona Kielce",
+    "lat": 50.861562972894134,
+    "lon": 20.624748700916783,
+    "stadium_name": "Stadion Miejski w Kielcach",
+    "year": "1973",
+    "icon":"./korona.png"
+  },
+  {
+    "club": "Lech Poznań",
+    "lat": 52.39773925213105,
+    "lon": 16.858081883744994,
+    "stadium_name": "Enea Stadion / Stadion Miejski w Poznaniu",
+    "year": "1922",
+    "icon":"./lech.png"
+  },
+  {
+    "club": "Legia Warszawa",
+    "lat": 52.22050757300413,
+    "lon": 21.041406613412,
+    "stadium_name": "Stadion Wojska Polskiego (Warszawa)",
+    "year": "1916",
+    "icon":"./legia.png"
+  },
+  {
+    "club": "Lechia Gdańsk",
+    "lat": 54.390160661548855,
+    "lon": 18.639298571035056,
+    "stadium_name": "Stadion Energa Gdańsk",
+    "year": "1945",
+    "icon":"./lechia.png"
+  },
+  {
+    "club": "Motor Lublin",
+    "lat": 51.23249040663149,
+    "lon": 22.557443936266413,
+    "stadium_name": "Arena Lublin",
+    "year": "1950",
+    "icon":"./motor.png"
+  },
+  {
+    "club": "Piast Gliwice",
+    "lat": 50.30664719676661,
+    "lon": 18.69536172749403,
+    "stadium_name": "Stadion im. Piotra Wieczorka (Gliwice)",
+    "year": "1945",
+    "icon":"./piast.png"
+  },
+  {
+    "club": "Pogoń Szczecin",
+    "lat": 53.43653910988563,
+    "lon": 14.518770440082514,
+    "stadium_name": "Stadion im. Floriana Krygiera (Szczecin)",
+    "year": "1948",
+    "icon":"./pogon.png"
+  },
+  {
+    "club": "Radomiak Radom",
+    "lat": 51.409216519776436,
+    "lon": 21.171443971163843,
+    "stadium_name": "Stadion im. Braci Czachorów (Radom)",
+    "year": "1910",
+    "icon":"./radomiak.png"
+  },
+  {
+    "club": "Raków Częstochowa",
+    "lat": 50.77690545460418,
+    "lon": 19.159201384655404,
+    "stadium_name": "Miejski Stadion Piłkarski Raków (Częstochowa)",
+    "year": "1921",
+    "icon":"./rakow.png"
+  },
+  {
+    "club": "Widzew Łódź",
+    "lat": 51.765158684687165,
+    "lon": 19.511614414340357,
+    "stadium_name": "Stadion im. Ludwika Sobolewskiego (Łódź)",
+    "year": "1910",
+    "icon":"./widzew.png"
+  },
+  {
+    "club": "Wisła Płock",
+    "lat": 52.56211716119607,
+    "lon": 19.684215262232954,
+    "stadium_name": "Stadion im. Kazimierza Górskiego (Płock)",
+    "year": "1947",
+    "icon":"./wisla.png"
+  },
+  {
+    "club": "Zagłębie Lubin",
+    "lat": 51.41425613204258,
+    "lon": 16.19819103323488,
+    "stadium_name": "Stadion Miejski w Lubinie / KGHM Zagłębie Arena",
+    "year": "1945",
+    "icon":"./zaglebie.png"
+  }
+]
