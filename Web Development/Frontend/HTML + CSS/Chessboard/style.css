@@ -1,0 +1,60 @@
+*,*::after,*::before{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    background: rgba(116, 160, 221, 0.6);
+}
+.grid-wrapper{
+    display:grid;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    gap: 12px;
+}
+.chess-board{
+    display:grid;
+    grid-template-columns: repeat(8,80px);
+    grid-template-rows: repeat(8,80px);
+    border:5px solid rgb(129, 62, 10);
+    box-shadow: 12px 12px 6px rgb(168, 156, 144);
+}
+.white{
+    background: white;
+    font-weight:700;
+    color:rgba(54, 79, 11, 0.766);
+    padding:3px;
+}
+.green{
+    background: rgba(54, 79, 11, 0.766);
+    font-weight:700;
+    color:white;
+    padding:3px;
+}
+.letters{
+    display:grid;
+    align-items: end;
+    justify-content: end;
+}
+.chess-field{
+    position:relative;
+}
+.digit {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+.letter {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+}
+.author{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: rgba(54, 79, 11, 0.9);
+    text-transform: uppercase;
+}
