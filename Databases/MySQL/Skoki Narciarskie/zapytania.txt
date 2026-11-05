@@ -1,0 +1,21 @@
+1) SELECT Imię, Nazwisko, Data_urodzenia, Kadra from zawodnik
+inner join kadra
+on zawodnik.Kadra_id_Kadra=kadra.id_Kadra
+where Data_urodzenia like '2000%';
+
+2) SELECT Imię, Nazwisko, Nazwa, Miejscowość from rekordzista 
+inner join zawodnik on Zawodnik_id_Zawodnik=id_Zawodnik 
+inner join skocznia on Skocznia_id_Skocznia=id_Skocznia;
+
+3) select kadra, count(id_zawodnik) from skok 
+inner join zawodnik on zawodnik_id_zawodnik=id_Zawodnik
+inner join kadra on kadra_id_kadra=id_kadra 
+where Zawody_id_Zawody=1 and Seria_id_Seria=1 
+group by kadra_id_kadra 
+order by count(id_zawodnik) desc;
+
+4) SELECT kadra, sum(punkty) as 'Suma punktów kadry', avg(punkty) as 'Średnia zdobytych punktów kadry na przestrzeni sezonu', min(punkty) as 'Minimalna ilość punktów w kadrze na przestrzeni sezon', max(punkty) as 'Maksymalna ilość punktów w kadrze na przestrzeni sezon', count(id_zawodnik) as 'Ilość zawodników' FROM `miejsce` 
+inner join zawodnik on Zawodnik_id_Zawodnik=id_Zawodnik 
+inner join kadra on kadra_id_kadra=id_kadra 
+group by kadra 
+order by sum(punkty) desc;
