@@ -1,0 +1,72 @@
+create table Polska(id_zawodnika int Primary Key AUTO_INCREMENT NOT Null,
+Imię Varchar(30), 
+Nazwisko Varchar(50), 
+Klub Varchar(100), 
+Wiek int,
+wartość_rynkowa numeric(9,3),
+wzrost_spadek char(2),
+ostatnia_zmiana numeric(9,3))ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Wojciech', 'Szczęsny', 'Juventus Turyn', 32, 15.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Łukasz', 'Skorupski', 'FC Bologna', 31, 4.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Kamil', 'Glik', 'Benevento Calcio', 34, 1.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Jan', 'Bednarek', 'Aston Villa', 26, 22.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Jakub', 'Kiwior', 'Spezia Calcio', 22, 6.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Bartosz', 'Bereszyński', 'UC Sampdoria', 30, 4.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Matty', 'Cash', 'Aston Villa', 25, 25.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Nicola', 'Zalewski', 'AS Roma', 20, 12.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Grzegorz', 'Krychowiak', 'Al-Shabab Club (Riyadh)', 32, 8.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Jakub', 'Moder', 'Brighton & Hove Albion', 23, 12.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Jakub', 'Kamiński', 'VfL Wolfsburg', 20, 10.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Kamil', 'Grosicki', 'Pogoń Szczecin', 34, 0.600);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Piotr', 'Zieliński', 'SSC Napoli', 28, 40.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Sebastian', 'Szymański', 'Feyenoord Rotterdam', 23, 14.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Karol', 'Świedrski', 'Charlotte FC', 25, 5.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Krzysztof', 'Piątek', 'US Salernitana 1919', 27, 12.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Arkadiusz', 'Milik', 'Juventus Turyn', 28, 10.000);
+INSERT INTO polska(Imię, Nazwisko, Klub, Wiek, wartość_rynkowa) VALUES ('Robert', 'Lewandowski', 'FC Barcelona', 34, 45.000);
+
+delimiter $$
+create procedure zmiana(in id_zaw int,in nowa_wartość numeric(9,3), out p_ostatnia_zmiana numeric(9,3), out p_wzrost_spadek char(2), out id_zaw_out int)
+begin 
+DECLARE p_wartość_rynkowa numeric(9,3) DEFAULT 0.0;
+set id_zaw_out = id_zaw;
+set p_wzrost_spadek= 0;
+SELECT wartość_rynkowa into p_wartość_rynkowa from polska where id_zawodnika = id_zaw;
+if nowa_wartość > p_wartość_rynkowa THEN
+update polska set wartość_rynkowa=nowa_wartość where id_zawodnika=id_zaw;
+set p_ostatnia_zmiana = nowa_wartość - p_wartość_rynkowa;
+set p_wzrost_spadek="+";
+ELSE
+update polska set wartość_rynkowa=nowa_wartość where id_zawodnika=id_zaw;
+set p_ostatnia_zmiana = p_wartość_rynkowa - nowa_wartość ;
+set p_wzrost_spadek="-";
+end if;
+end$$
+
+call  zmiana (1, 12.000, @OSTATNIA_ZMIANA, @WZROST_SPADEK, @ID);
+update polska set wzrost_spadek=@WZROST_SPADEK, ostatnia_zmiana=@OSTATNIA_ZMIANA where id_zawodnika=@ID;
+call  zmiana (2, 5.000, @OSTATNIA_ZMIANA, @WZROST_SPADEK, @ID);
+update polska set wzrost_spadek=@WZROST_SPADEK, ostatnia_zmiana=@OSTATNIA_ZMIANA where id_zawodnika=@ID;
+call  zmiana (4, 20.000, @OSTATNIA_ZMIANA, @WZROST_SPADEK, @ID);
+update polska set wzrost_spadek=@WZROST_SPADEK, ostatnia_zmiana=@OSTATNIA_ZMIANA where id_zawodnika=@ID;
+call  zmiana (5, 15.000, @OSTATNIA_ZMIANA, @WZROST_SPADEK, @ID);
+update polska set wzrost_spadek=@WZROST_SPADEK, ostatnia_zmiana=@OSTATNIA_ZMIANA where id_zawodnika=@ID;
+call  zmiana (6, 3.000, @OSTATNIA_ZMIANA, @WZROST_SPADEK, @ID);
+update polska set wzrost_spadek=@WZROST_SPADEK, ostatnia_zmiana=@OSTATNIA_ZMIANA where id_zawodnika=@ID;
+call  zmiana (7, 30.000, @OSTATNIA_ZMIANA, @WZROST_SPADEK, @ID);
+update polska set wzrost_spadek=@WZROST_SPADEK, ostatnia_zmiana=@OSTATNIA_ZMIANA where id_zawodnika=@ID;
+call  zmiana (8, 15.000, @OSTATNIA_ZMIANA, @WZROST_SPADEK, @ID);
+update polska set wzrost_spadek=@WZROST_SPADEK, ostatnia_zmiana=@OSTATNIA_ZMIANA where id_zawodnika=@ID;
+call  zmiana (9, 4.500, @OSTATNIA_ZMIANA, @WZROST_SPADEK, @ID);
+update polska set wzrost_spadek=@WZROST_SPADEK, ostatnia_zmiana=@OSTATNIA_ZMIANA where id_zawodnika=@ID;
+call  zmiana (12, 0.800, @OSTATNIA_ZMIANA, @WZROST_SPADEK, @ID);
+update polska set wzrost_spadek=@WZROST_SPADEK, ostatnia_zmiana=@OSTATNIA_ZMIANA where id_zawodnika=@ID;
+call  zmiana (13, 55.000, @OSTATNIA_ZMIANA, @WZROST_SPADEK, @ID);
+update polska set wzrost_spadek=@WZROST_SPADEK, ostatnia_zmiana=@OSTATNIA_ZMIANA where id_zawodnika=@ID;
+call  zmiana (14, 20.000, @OSTATNIA_ZMIANA, @WZROST_SPADEK, @ID);
+update polska set wzrost_spadek=@WZROST_SPADEK, ostatnia_zmiana=@OSTATNIA_ZMIANA where id_zawodnika=@ID;
+call  zmiana (16, 5.000, @OSTATNIA_ZMIANA, @WZROST_SPADEK, @ID);
+update polska set wzrost_spadek=@WZROST_SPADEK, ostatnia_zmiana=@OSTATNIA_ZMIANA where id_zawodnika=@ID;
+call  zmiana (17, 22.000, @OSTATNIA_ZMIANA, @WZROST_SPADEK, @ID);
+update polska set wzrost_spadek=@WZROST_SPADEK, ostatnia_zmiana=@OSTATNIA_ZMIANA where id_zawodnika=@ID;
