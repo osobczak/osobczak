@@ -1,0 +1,46 @@
+{
+  "entrypoints": {
+    "default": {
+      "css": [
+        "/components/com_bpgallery/assets/default.css"
+      ],
+      "js": [
+        "/components/com_bpgallery/assets/default.js"
+      ]
+    },
+    "square": {
+      "css": [
+        "/components/com_bpgallery/assets/square.css"
+      ],
+      "js": [
+        "/components/com_bpgallery/assets/square.js"
+      ]
+    },
+    "masonry": {
+      "css": [
+        "/components/com_bpgallery/assets/masonry.css"
+      ],
+      "js": [
+        "/components/com_bpgallery/assets/masonry.js"
+      ]
+    },
+    "lightbox": {
+      "css": [
+        "/components/com_bpgallery/assets/lightbox.css"
+      ],
+      "js": [
+        "/components/com_bpgallery/assets/lightbox.js"
+      ]
+    },
+    "category-default": {
+      "css": [
+        "/components/com_bpgallery/assets/category-default.css"
+      ]
+    },
+    "image-default": {
+      "css": [
+        "/components/com_bpgallery/assets/image-default.css"
+      ]
+    }
+  }
+}

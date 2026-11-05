@@ -1,0 +1,12 @@
+{
+  "components/com_bpgallery/assets/category-default.css": "/components/com_bpgallery/assets/category-default.css",
+  "components/com_bpgallery/assets/default.css": "/components/com_bpgallery/assets/default.css",
+  "components/com_bpgallery/assets/default.js": "/components/com_bpgallery/assets/default.js",
+  "components/com_bpgallery/assets/image-default.css": "/components/com_bpgallery/assets/image-default.css",
+  "components/com_bpgallery/assets/lightbox.css": "/components/com_bpgallery/assets/lightbox.css",
+  "components/com_bpgallery/assets/lightbox.js": "/components/com_bpgallery/assets/lightbox.js",
+  "components/com_bpgallery/assets/masonry.css": "/components/com_bpgallery/assets/masonry.css",
+  "components/com_bpgallery/assets/masonry.js": "/components/com_bpgallery/assets/masonry.js",
+  "components/com_bpgallery/assets/square.css": "/components/com_bpgallery/assets/square.css",
+  "components/com_bpgallery/assets/square.js": "/components/com_bpgallery/assets/square.js"
+}

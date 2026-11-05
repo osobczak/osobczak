@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_BPGALLERY_VIEW_CATEGORY_MASONRY_TITLE" option="COM_BPGALLERY_VIEW_CATEGORY_MASONRY_OPTION">
+        <message>
+            <![CDATA[COM_BPGALLERY_VIEW_CATEGORY_MASONRY_DESC]]>
+        </message>
+    </layout>
+
+    <!-- Add fields to the request variables for the layout. -->
+    <fields name="request"
+            addfieldpath="/administrator/components/com_categories/models/fields"
+    >
+        <fieldset name="request"
+                  addfieldpath="/administrator/components/com_bpgallery/models/fields"
+        >
+            <field
+                    name="id"
+                    type="modal_category"
+                    label="COM_BPGALLERY_FIELD_CATEGORY_LABEL"
+                    description="COM_BPGALLERY_FIELD_CATEGORY_DESC"
+                    extension="com_bpgallery"
+                    required="true"
+                    select="true"
+                    new="true"
+                    edit="true"
+                    clear="true"
+            />
+        </fieldset>
+    </fields>
+
+
+    <!-- Add fields to the parameters object for the layout. -->
+    <fields name="params">
+
+
+        <fieldset
+                name="categories"
+                label="COM_BPGALLERY_FIELDSET_CONFIG_CATEGORIES_LABEL"
+        >
+            <field
+                    name="categories_note"
+                    type="spacer"
+                    label="COM_BPGALLERY_FIELDSET_CONFIG_CATEGORIES_DESC"
+                    class="muted"
+            />
+
+            <field
+                    name="show_category_title"
+                    type="list"
+                    label="JGLOBAL_SHOW_CATEGORY_TITLE"
+                    description="JGLOBAL_SHOW_CATEGORY_TITLE_DESC"
+                    class="chzn-color"
+                    useglobal="true"
+            >
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="show_description"
+                    type="list"
+                    label="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_LABEL"
+                    description="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_DESC"
+                    class="chzn-color"
+                    useglobal="true"
+            >
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="show_description_image"
+                    type="list"
+                    label="JGLOBAL_SHOW_CATEGORY_IMAGE_LABEL"
+                    description="JGLOBAL_SHOW_CATEGORY_IMAGE_DESC"
+                    class="chzn-color"
+                    useglobal="true"
+            >
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="maxLevel"
+                    type="list"
+                    label="JGLOBAL_MAXIMUM_CATEGORY_LEVELS_LABEL"
+                    description="JGLOBAL_MAXIMUM_CATEGORY_LEVELS_DESC"
+                    useglobal="true"
+            >
+                <option value="-1">JALL</option>
+                <option value="0">JNONE</option>
+                <option value="1">J1</option>
+                <option value="2">J2</option>
+                <option value="3">J3</option>
+                <option value="4">J4</option>
+                <option value="5">J5</option>
+            </field>
+
+            <field
+                    name="show_empty_categories"
+                    type="list"
+                    label="JGLOBAL_SHOW_EMPTY_CATEGORIES_LABEL"
+                    description="COM_BPGALLERY_SHOW_EMPTY_CATEGORIES_DESC"
+                    class="chzn-color"
+                    useglobal="true"
+            >
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="show_subcat_desc"
+                    type="list"
+                    label="JGLOBAL_SHOW_SUBCATEGORIES_DESCRIPTION_LABEL"
+                    description="JGLOBAL_SHOW_SUBCATEGORIES_DESCRIPTION_DESC"
+                    class="chzn-color"
+                    useglobal="true"
+            >
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="show_category_heading_title_text"
+                    type="list"
+                    label="JGLOBAL_SHOW_CATEGORY_HEADING_TITLE_TEXT_LABEL"
+                    description="JGLOBAL_SHOW_CATEGORY_HEADING_TITLE_TEXT_DESC"
+                    class="btn-group btn-group-yesno"
+                    useglobal="true"
+            >
+                <option value="1">JSHOW</option>
+                <option value="0">JHIDE</option>
+            </field>
+
+            <field
+                    name="show_cat_num_images"
+                    type="list"
+                    label="COM_BPGALLERY_CONFIG_SHOW_CAT_NUM_IMAGES_LABEL"
+                    description="COM_BPGALLERY_CONFIG_SHOW_CAT_NUM_IMAGES_DESC"
+                    useglobal="true"
+                    filter="INT"
+                    class="chzn-color"
+            >
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+        </fieldset>
+
+        <fieldset name="category" label="COM_BPGALLERY_FIELDSET_CATEGORY_LABEL">
+
+            <field
+                    name="images"
+                    class="muted"
+                    type="spacer"
+                    label="COM_BPGALLERY_FIELDSET_IMAGES_DESC"
+            />
+
+            <field
+                    name="category_common_settings_note"
+                    class=""
+                    type="spacer"
+                    label="COM_BPGALLERY_FIELDSET_CATEGORY_COMMON_DESC"
+            />
+
+            <field
+                    name="images_limit"
+                    type="text"
+                    label="COM_BPGALLERY_CONFIG_IMAGES_LIMIT_LABEL"
+                    description="COM_BPGALLERY_CONFIG_IMAGES_LIMIT_DESC"
+                    filter="INT"
+                    useglobal="true"/>
+
+            <field
+                    name="group_images"
+                    type="list"
+                    label="COM_BPGALLERY_CONFIG_GROUP_IMAGES_LABEL"
+                    description="COM_BPGALLERY_CONFIG_GROUP_IMAGES_DESC"
+                    class="chzn-color"
+                    useglobal="true"
+            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+
+            <field
+                    name="category_masonry_settings_note"
+                    class=""
+                    type="spacer"
+                    label="COM_BPGALLERY_FIELDSET_CATEGORY_SQUARE_DESC"
+            />
+
+            <field
+                    name="category_masonry_columns"
+                    type="number"
+                    label="COM_BPGALLERY_CONFIG_CATEGORY_MASONRY_COLUMNS_LABEL"
+                    description="COM_BPGALLERY_CONFIG_CATEGORY_MASONRY_COLUMNS_DESC"
+                    filter="INT"
+                    min="1" max="20" step="1"
+                    useglobal="true"/>
+
+            <field
+                    name="category_masonry_gap"
+                    type="list"
+                    label="COM_BPGALLERY_CONFIG_CATEGORY_MASONRY_GAP_LABEL"
+                    description="COM_BPGALLERY_CONFIG_CATEGORY_MASONRY_GAP_DESC"
+                    useglobal="true"
+                    filter="INT"
+                    class="chzn-color"
+            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+
+        </fieldset>
+
+        <fieldset name="image" label="COM_BPGALLERY_FIELDSET_IMAGE_LABEL">
+
+            <field
+                    name="image"
+                    class="muted"
+                    type="spacer"
+                    label="COM_BPGALLERY_FIELDSET_IMAGE_DESC"
+            />
+
+            <field
+                    name="show_image_title"
+                    type="list"
+                    label="COM_BPGALLERY_CONFIG_SHOW_IMAGE_TITLE_LABEL"
+                    description="COM_BPGALLERY_CONFIG_SHOW_IMAGE_TITLE_DESC"
+                    useglobal="true"
+                    class="chzn-color"
+            >
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="show_image_intro"
+                    type="list"
+                    label="COM_BPGALLERY_CONFIG_SHOW_IMAGE_INTRO_LABEL"
+                    description="COM_BPGALLERY_CONFIG_SHOW_IMAGE_INTRO_DESC"
+                    useglobal="true"
+                    class="chzn-color"
+            >
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="images_lightbox"
+                    type="list"
+                    label="COM_BPGALLERY_CONFIG_IMAGES_LIGHTBOX_LABEL"
+                    description="COM_BPGALLERY_CONFIG_IMAGES_LIGHTBOX_DESC"
+                    useglobal="true"
+                    class="chzn-color"
+            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+
+            <field
+                    name="images_lightbox_title"
+                    type="list"
+                    label="COM_BPGALLERY_CONFIG_IMAGES_LIGHTBOX_TITLE_LABEL"
+                    description="COM_BPGALLERY_CONFIG_IMAGES_LIGHTBOX_TITLE_DESC"
+                    class="chzn-color"
+                    useglobal="1"
+            >
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="images_lightbox_min_res"
+                    type="number"
+                    label="COM_BPGALLERY_CONFIG_IMAGES_LIGHTBOX_MIN_RES_LABEL"
+                    description="COM_BPGALLERY_CONFIG_IMAGES_LIGHTBOX_MIN_RES_DESC"
+                    filter="INT"
+                    min="0" step="100"
+                    useglobal="1"
+            />
+
+            <field
+                    name="thumbnails_size_category_masonry"
+                    type="subform"
+                    label="COM_BPGALLERY_FIELDSET_IMAGE_THUMBNAIL_SIZE_LABEL"
+                    description="COM_BPGALLERY_FIELDSET_IMAGE_THUMBNAIL_SIZE_DESC"
+                    layout="joomla.form.field.subform.repeatable-table"
+                    useglobal="1"
+                    formsource="/administrator/components/com_bpgallery/models/forms/thumbnail_sizes_global.xml"
+            />
+
+        </fieldset>
+
+        <fieldset name="advanced">
+
+            <field
+                    name="include_component_assets"
+                    type="list"
+                    label="COM_BPGALLERY_CONFIG_INCLUDE_COMPONENT_ASSETS_LABEL"
+                    description="COM_BPGALLERY_CONFIG_INCLUDE_COMPONENT_ASSETS_DESC"
+                    useglobal="true"
+                    class="chzn-color"
+            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+
+            <field
+                    name="include_theme_assets"
+                    type="list"
+                    label="COM_BPGALLERY_CONFIG_INCLUDE_THEME_ASSETS_LABEL"
+                    description="COM_BPGALLERY_CONFIG_INCLUDE_THEME_ASSETS_DESC"
+                    useglobal="true"
+                    class="chzn-color"
+            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+
+        </fieldset>
+    </fields>
+</metadata>

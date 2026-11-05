@@ -1,0 +1,17 @@
+{
+  "entrypoints": {
+    "uploader": {
+      "css": [
+        "administrator/components/com_bpgallery/assets/uploader.css"
+      ],
+      "js": [
+        "administrator/components/com_bpgallery/assets/uploader.js"
+      ]
+    },
+    "component": {
+      "css": [
+        "administrator/components/com_bpgallery/assets/component.css"
+      ]
+    }
+  }
+}
