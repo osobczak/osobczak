@@ -1,0 +1,15 @@
+2023-05-09T08:45:44+00:00 ERROR GET Żądanie: https://api.pinterest.com/ads/v4/advertisers/countries
+Stan kodu: 401
+Odpowiedź API: Połącz się ponownie z kontem na Pintereście
+2023-05-09T08:50:33+00:00 ERROR GET Żądanie: https://api.pinterest.com/ads/v4/advertisers/countries
+Stan kodu: 401
+Odpowiedź API: Połącz się ponownie z kontem na Pintereście
+2023-05-09T08:50:36+00:00 ERROR GET Żądanie: https://api.pinterest.com/ads/v4/advertisers/countries
+Stan kodu: 401
+Odpowiedź API: Połącz się ponownie z kontem na Pintereście
+2023-05-09T08:50:40+00:00 ERROR GET Żądanie: https://api.pinterest.com/ads/v4/advertisers/countries
+Stan kodu: 401
+Odpowiedź API: Połącz się ponownie z kontem na Pintereście
+2023-05-09T08:50:42+00:00 ERROR GET Żądanie: https://api.pinterest.com/ads/v4/advertisers/countries
+Stan kodu: 401
+Odpowiedź API: Połącz się ponownie z kontem na Pintereście
