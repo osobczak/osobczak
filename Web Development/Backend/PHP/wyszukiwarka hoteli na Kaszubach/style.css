@@ -1,0 +1,437 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.strona {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    max-width: 1300px;
+    gap: 50px;
+}
+
+.hero {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 280px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: url('https://images.unsplash.com/photo-1508606572321-901ea4437075?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(30,58,138,0.7);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+
+.hero-tresc {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.hero-logo .logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.hero-tresc h1 {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.hero-tresc p {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.95;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
+
+.sekcja-formularz {
+    display: grid;
+    place-items: center;
+    padding: 0 20px 50px;
+}
+
+.karta-formularz {
+    display: grid;
+    gap: 28px;
+    width: 100%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 24px;
+    padding: 48px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    backdrop-filter: blur(12px);
+    border-top: 6px solid #ffde00;
+}
+
+.naglowek-formularza h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: #1e3a8a;
+}
+
+.formularz {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 22px;
+    align-items: end;
+}
+
+.pole {
+    display: grid;
+    gap: 8px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+select,
+input[type="date"],
+input[type="number"] {
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(30,58,138,0.3);
+    background: rgba(255,255,255,0.7);
+    font-size: 15px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(6px);
+}
+
+select:focus,
+input:focus {
+    outline: none;
+    border-color: #ffde00;
+    box-shadow: 0 0 0 4px rgba(255,222,0,0.2);
+    background: rgba(255,255,255,0.9);
+}
+
+.przycisk .btn-rezerwacja {
+    padding: 18px 36px;
+    border-radius: 30px;
+    background-color: #1e3a8a;
+    color: #ffde00;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    box-shadow: 0 6px 18px rgba(30,58,138,0.6);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.przycisk .btn-rezerwacja::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.25), rgba(255,255,255,0));
+    transform: skewX(-25deg);
+    transition: all 0.7s ease;
+}
+
+.przycisk .btn-rezerwacja:hover::before {
+    left: 125%;
+}
+
+.przycisk .btn-rezerwacja:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 14px 32px rgba(30,58,138,0.7);
+}
+
+.stopka {
+    display: grid;
+    place-items: center;
+    padding: 40px 20px;
+    background: #1e3a8a;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border-radius: 0 0 24px 24px;
+    text-align: center;
+}
+
+.switch-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e3a8a;
+    cursor: pointer;
+    position: relative;
+}
+
+.switch-label input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: relative;
+    width: 50px;
+    height: 24px;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+    flex-shrink: 0;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    top: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.switch-label input:checked + .slider {
+    background-color: #1e3a8a;
+}
+
+.switch-label input:checked + .slider::before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.wyniki-ofert {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.karta-hotel {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.karta-hotel:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+}
+
+.karta-hotel .hotel-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.karta-hotel:hover .hotel-img {
+    transform: scale(1.05);
+}
+
+.karta-hotel .hotel-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.karta-hotel h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e3a8a;
+}
+
+.karta-hotel .cena {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffde00;
+}
+
+.karta-hotel .opis {
+    font-size: 14px;
+    color: #0f172a;
+    opacity: 0.85;
+    line-height: 1.5;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.karta-hotel .btn-zarezerwuj {
+    padding: 14px 0;
+    border-radius: 30px;
+    background: linear-gradient(120deg, #1e3a8a, #3b5dd7);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(30,58,138,0.6);
+    transition: all 0.3s ease;
+}
+
+.karta-hotel .btn-zarezerwuj:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(30,58,138,0.7);
+}
+
+@media (min-width: 1200px) {
+    .wyniki-ofert {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .wyniki-ofert {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .wyniki-ofert {
+        grid-template-columns: 1fr;
+    }
+}
+#szczegoly-oferty {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    backdrop-filter: blur(12px);
+    margin-bottom: 30px;
+    display: grid;
+    gap: 12px;
+    font-size: 16px;
+    color: #1e3a8a;
+}
+
+#szczegoly-oferty h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#szczegoly-oferty p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#formularz-rezerwacja .formularz {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    align-items: end;
+}
+
+#formularz-rezerwacja .pole {
+    display: grid;
+    gap: 8px;
+}
+
+#formularz-rezerwacja input,
+#formularz-rezerwacja select {
+    padding: 14px 18px;
+    border-radius: 16px;
+    border: 1px solid rgba(30,58,138,0.3);
+    background: rgba(255,255,255,0.7);
+    font-size: 15px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(6px);
+}
+
+#formularz-rezerwacja input:focus,
+#formularz-rezerwacja select:focus {
+    outline: none;
+    border-color: #ffde00;
+    box-shadow: 0 0 0 4px rgba(255,222,0,0.2);
+    background: rgba(255,255,255,0.9);
+}
+
+#formularz-rezerwacja .przycisk {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+#formularz-rezerwacja .btn-rezerwacja {
+    padding: 18px 36px;
+    border-radius: 30px;
+    background: linear-gradient(120deg, #1e3a8a, #3b5dd7);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    box-shadow: 0 6px 18px rgba(30,58,138,0.6);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+#formularz-rezerwacja .btn-rezerwacja::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.25), rgba(255,255,255,0));
+    transform: skewX(-25deg);
+    transition: all 0.7s ease;
+}
+
+#formularz-rezerwacja .btn-rezerwacja:hover::before {
+    left: 125%;
+}
+
+#formularz-rezerwacja .btn-rezerwacja:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 14px 32px rgba(30,58,138,0.6);
+}

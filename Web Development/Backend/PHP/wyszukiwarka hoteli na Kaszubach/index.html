@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Chëcz™ – noclegi na Kaszubach</title>
+    <link rel="icon" type="image/png" href="Checz.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="strona">
+        <header class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-tresc">
+                <div class="hero-logo">
+                    <img src="Checz.png" alt="Chëcz™" class="logo">
+                    <h1>Chëcz™ – Luksusowe noclegi na Kaszubach</h1>
+                </div>
+                <p>Spokój, natura i komfort w sercu Kaszub</p>
+            </div>
+        </header>
+
+        <section class="sekcja-formularz">
+            <div class="karta-formularz">
+                <div class="naglowek-formularza">
+                    <h2>Rezerwuj nocleg</h2>
+                </div>
+                <form id="rezerwacja-form">
+                    <div class="formularz">
+                        <div class="pole">
+                            <label for="miejscowosc">Miejscowość</label>
+                            <select id="miejscowosc" required>
+                                <option value="">Wybierz miejscowość</option>
+                                <option value="1">Charzykowy</option>
+                                <option value="2">Wdzydze Kiszewskie</option>
+                                <option value="3">Kartuzy</option>
+                            </select>
+                        </div>
+                        <div class="pole">
+                            <label for="przyjazd">Przyjazd</label>
+                            <input type="date" id="przyjazd" required>
+                        </div>
+                        <div class="pole">
+                            <label for="wyjazd">Wyjazd</label>
+                            <input type="date" id="wyjazd" required>
+                        </div>
+                        <div class="pole">
+                            <label for="dorosli">Dorośli</label>
+                            <input type="number" id="dorosli" min="1" max="5" value="2" required>
+                        </div>
+                        <div class="pole">
+                            <label for="lozka">Łóżka dziecięce</label>
+                            <input type="number" id="lozka" min="0" max="5" value="0" required>
+                        </div>
+                        <div class="pole">
+                            <label class="switch-label">Zwierzęta akceptowane
+                                <input type="checkbox" name="zwierzeta_akceptowane" value="1">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="pole">
+                            <label class="switch-label">Śniadania w cenie
+                                <input type="checkbox" name="sniadania" value="1">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="pole przycisk">
+                            <button type="submit" class="btn-rezerwacja">Sprawdź oferty</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div id="wyniki-ofert" class="wyniki-ofert"></div>
+
+        <footer class="stopka">
+            <p>Prawa autorskie © 1996–2026 Chëcz™. Wszystkie prawa zastrzeżone.</p>
+            <p>Autor: Oliwier Sobczak</p>
+        </footer>
+    </div>
+</body>
+</html>
