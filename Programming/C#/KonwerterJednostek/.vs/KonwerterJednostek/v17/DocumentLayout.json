@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\xXPIO\\Desktop\\KonwerterJednostek\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D3AB73C0-D13E-42D5-B344-260C18DFA32B}|KonwerterJednostek\\KonwerterJednostek.csproj|c:\\users\\xxpio\\desktop\\konwerterjednostek\\konwerterjednostek\\konwerter\\konwerterdlugosci.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3AB73C0-D13E-42D5-B344-260C18DFA32B}|KonwerterJednostek\\KonwerterJednostek.csproj|solutionrelative:konwerterjednostek\\konwerter\\konwerterdlugosci.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3AB73C0-D13E-42D5-B344-260C18DFA32B}|KonwerterJednostek\\KonwerterJednostek.csproj|c:\\users\\xxpio\\desktop\\konwerterjednostek\\konwerterjednostek\\konwerter\\konwerterwagi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3AB73C0-D13E-42D5-B344-260C18DFA32B}|KonwerterJednostek\\KonwerterJednostek.csproj|solutionrelative:konwerterjednostek\\konwerter\\konwerterwagi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3AB73C0-D13E-42D5-B344-260C18DFA32B}|KonwerterJednostek\\KonwerterJednostek.csproj|c:\\users\\xxpio\\desktop\\konwerterjednostek\\konwerterjednostek\\konwerter\\konwertertemperatur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3AB73C0-D13E-42D5-B344-260C18DFA32B}|KonwerterJednostek\\KonwerterJednostek.csproj|solutionrelative:konwerterjednostek\\konwerter\\konwertertemperatur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3AB73C0-D13E-42D5-B344-260C18DFA32B}|KonwerterJednostek\\KonwerterJednostek.csproj|c:\\users\\xxpio\\desktop\\konwerterjednostek\\konwerterjednostek\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3AB73C0-D13E-42D5-B344-260C18DFA32B}|KonwerterJednostek\\KonwerterJednostek.csproj|solutionrelative:konwerterjednostek\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KonwerterWagi.cs",
+              "DocumentMoniker": "C:\\Users\\xXPIO\\Desktop\\KonwerterJednostek\\KonwerterJednostek\\Konwerter\\KonwerterWagi.cs",
+              "RelativeDocumentMoniker": "KonwerterJednostek\\Konwerter\\KonwerterWagi.cs",
+              "ToolTip": "C:\\Users\\xXPIO\\Desktop\\KonwerterJednostek\\KonwerterJednostek\\Konwerter\\KonwerterWagi.cs",
+              "RelativeToolTip": "KonwerterJednostek\\Konwerter\\KonwerterWagi.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T12:54:55.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KonwerterDlugosci.cs",
+              "DocumentMoniker": "C:\\Users\\xXPIO\\Desktop\\KonwerterJednostek\\KonwerterJednostek\\Konwerter\\KonwerterDlugosci.cs",
+              "RelativeDocumentMoniker": "KonwerterJednostek\\Konwerter\\KonwerterDlugosci.cs",
+              "ToolTip": "C:\\Users\\xXPIO\\Desktop\\KonwerterJednostek\\KonwerterJednostek\\Konwerter\\KonwerterDlugosci.cs",
+              "RelativeToolTip": "KonwerterJednostek\\Konwerter\\KonwerterDlugosci.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwCkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T12:54:39.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KonwerterTemperatur.cs",
+              "DocumentMoniker": "C:\\Users\\xXPIO\\Desktop\\KonwerterJednostek\\KonwerterJednostek\\Konwerter\\KonwerterTemperatur.cs",
+              "RelativeDocumentMoniker": "KonwerterJednostek\\Konwerter\\KonwerterTemperatur.cs",
+              "ToolTip": "C:\\Users\\xXPIO\\Desktop\\KonwerterJednostek\\KonwerterJednostek\\Konwerter\\KonwerterTemperatur.cs",
+              "RelativeToolTip": "KonwerterJednostek\\Konwerter\\KonwerterTemperatur.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwB4AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T12:54:20.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\xXPIO\\Desktop\\KonwerterJednostek\\KonwerterJednostek\\Program.cs",
+              "RelativeDocumentMoniker": "KonwerterJednostek\\Program.cs",
+              "ToolTip": "C:\\Users\\xXPIO\\Desktop\\KonwerterJednostek\\KonwerterJednostek\\Program.cs",
+              "RelativeToolTip": "KonwerterJednostek\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwB4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T12:53:39.369Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+C:\Users\xXPIO\Desktop\KonwerterJednostek\KonwerterJednostek\obj\Debug\net9.0\KonwerterJednostek.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xXPIO\Desktop\KonwerterJednostek\KonwerterJednostek\obj\Debug\net9.0\KonwerterJednostek.AssemblyInfoInputs.cache
+C:\Users\xXPIO\Desktop\KonwerterJednostek\KonwerterJednostek\obj\Debug\net9.0\KonwerterJednostek.AssemblyInfo.cs
+C:\Users\xXPIO\Desktop\KonwerterJednostek\KonwerterJednostek\obj\Debug\net9.0\KonwerterJednostek.csproj.CoreCompileInputs.cache
+C:\Users\xXPIO\Desktop\KonwerterJednostek\KonwerterJednostek\bin\Debug\net9.0\KonwerterJednostek.exe
+C:\Users\xXPIO\Desktop\KonwerterJednostek\KonwerterJednostek\bin\Debug\net9.0\KonwerterJednostek.deps.json
+C:\Users\xXPIO\Desktop\KonwerterJednostek\KonwerterJednostek\bin\Debug\net9.0\KonwerterJednostek.runtimeconfig.json
+C:\Users\xXPIO\Desktop\KonwerterJednostek\KonwerterJednostek\bin\Debug\net9.0\KonwerterJednostek.dll
+C:\Users\xXPIO\Desktop\KonwerterJednostek\KonwerterJednostek\bin\Debug\net9.0\KonwerterJednostek.pdb
+C:\Users\xXPIO\Desktop\KonwerterJednostek\KonwerterJednostek\obj\Debug\net9.0\KonwerterJednostek.dll
+C:\Users\xXPIO\Desktop\KonwerterJednostek\KonwerterJednostek\obj\Debug\net9.0\refint\KonwerterJednostek.dll
+C:\Users\xXPIO\Desktop\KonwerterJednostek\KonwerterJednostek\obj\Debug\net9.0\KonwerterJednostek.pdb
+C:\Users\xXPIO\Desktop\KonwerterJednostek\KonwerterJednostek\obj\Debug\net9.0\KonwerterJednostek.genruntimeconfig.cache
+C:\Users\xXPIO\Desktop\KonwerterJednostek\KonwerterJednostek\obj\Debug\net9.0\ref\KonwerterJednostek.dll
+C:\Users\xXPIO\Desktop\KonwerterJednostek\KonwerterJednostek\obj\Debug\net9.0\Konwerte.4638451F.Up2Date
